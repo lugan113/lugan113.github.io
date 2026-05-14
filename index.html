@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="description" content="Lu Gan — Independent AI Researcher, Nature Portfolio first author, CVPR 2026 Demo presenter. Building the future of 3D vision and data-centric AI.">
-  <meta property="og:title" content="Lu Gan | AI Researcher & Builder">
-  <meta property="og:description" content="Independent AI Researcher presenting at CVPR 2026. Nature Portfolio first author.">
+  <meta name="description" content="Lu Gan & Xi Li — Dataset-driven AI research duo. Nature Portfolio published, CVPR 2026 Demo, Hugging Face datasets. Building the future of data-centric AI and 3D vision.">
+  <meta property="og:title" content="Lu Gan & Xi Li | Dataset-Driven AI Research">
+  <meta property="og:description" content="A research & engineering duo building high-quality datasets for data-centric AI, 3D vision, and on-device speech. CVPR 2026 · Nature Portfolio · Hugging Face.">
   <meta property="og:type" content="profile">
-  <title>Lu Gan | AI Researcher & Builder</title>
+  <title>Lu Gan & Xi Li | Dataset-Driven AI Research</title>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -93,6 +93,23 @@
       padding: var(--space-8) 0 var(--space-4);
     }
 
+    .avatars-row {
+      display: flex;
+      justify-content: center;
+      gap: calc(-1 * var(--space-2));
+      margin-bottom: var(--space-5);
+    }
+
+    .avatars-row .avatar {
+      margin: 0;
+      border: 2px solid var(--bg);
+      box-shadow: 0 0 0 2px var(--border-light);
+    }
+
+    .avatars-row .avatar + .avatar {
+      margin-left: -12px;
+    }
+
     .avatar {
       width: 96px;
       height: 96px;
@@ -114,6 +131,7 @@
       letter-spacing: -0.02em;
       color: var(--text-primary);
       margin-bottom: var(--space-1);
+      word-break: keep-all;
     }
 
     .tagline {
@@ -500,9 +518,12 @@
 
     <!-- ====== HEADER ====== -->
     <header class="header">
-      <div class="avatar"><img src="background/cropped-lugan_photo%20(1).jpg" alt="Lu Gan"></div>
-      <h1 class="name">Lu Gan</h1>
-      <p class="tagline">Independent AI Researcher & Builder</p>
+      <div class="avatars-row">
+        <div class="avatar"><img src="background/cropped-lugan_photo%20(1).jpg" alt="Lu Gan"></div>
+        <div class="avatar"><img src="background/cropped-lixi_photo.jpg" alt="Xi Li"></div>
+      </div>
+      <h1 class="name">Lu Gan &amp; Xi Li</h1>
+      <p class="tagline">Dataset-Driven AI Research &amp; Engineering</p>
       <div class="social-links">
         <a href="mailto:lucygan113@gmail.com" class="social-link email" aria-label="Email">
           <i class="fas fa-envelope"></i>
@@ -510,20 +531,14 @@
         <a href="https://github.com/lugan113" class="social-link github" aria-label="GitHub" target="_blank" rel="noopener">
           <i class="fab fa-github"></i>
         </a>
+        <a href="https://huggingface.co/datasets/lugan" class="social-link huggingface" aria-label="Hugging Face" target="_blank" rel="noopener">
+          <i class="fas fa-face-smile"></i>
+        </a>
         <a href="https://www.linkedin.com/in/lu-gan-91786217a/" class="social-link linkedin" aria-label="LinkedIn" target="_blank" rel="noopener">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </div>
     </header>
-
-    <hr class="divider">
-
-    <!-- ====== ABOUT ====== -->
-    <section aria-label="About">
-      <p class="about-text">
-        I am an independent AI researcher working at the intersection of <strong>data-centric AI</strong> and <strong>3D vision</strong>. My background spans clinical physiotherapy to self-taught machine learning. <strong>Nature Portfolio first author</strong>, presenting a demo at <strong>CVPR 2026</strong>.
-      </p>
-    </section>
 
     <hr class="divider">
 
@@ -540,14 +555,23 @@
           </div>
         </div>
         <div class="card duo-card">
-          <div class="duo-avatar sam"><img src="background/cropped-lixi_photo.jpg" alt="Sam Li"></div>
+          <div class="duo-avatar xi"><img src="background/cropped-lixi_photo.jpg" alt="Xi Li"></div>
           <div class="duo-info">
-            <h3>Sam Li</h3>
+            <h3>Xi Li</h3>
             <div class="duo-role">Senior AI Engineer | Generative AI & Agent Specialist</div>
-            <p class="duo-desc"> Expert in building multi-modal agentic systems (YOLO, Flux, SAM2, Qwen-VL) and industrial-grade solutions for 3D reconstruction and AIGC.</p>
+            <p class="duo-desc">Expert in building multi-modal agentic systems (YOLO, Flux, SAM2, Qwen-VL) and industrial-grade solutions for 3D reconstruction and AIGC.</p>
           </div>
         </div>
       </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- ====== ABOUT ====== -->
+    <section aria-label="About">
+      <p class="about-text">
+        We are a <strong>dataset-driven AI research &amp; engineering duo</strong>. We build datasets, annotation tools, and scalable data pipelines — the infrastructure that powers downstream AI. From hematological cell data (<strong>Nature Portfolio</strong>) to multilingual on-device speech commands (<strong>Hugging Face</strong>) to a real-time human-in-the-loop annotation system (<strong>AutoLabel Pro · CVPR 2026 Demo</strong>), our work spans modalities — united by an obsession with data quality and annotation fidelity.
+      </p>
     </section>
 
     <hr class="divider">
@@ -564,6 +588,16 @@
         </div>
         <p class="project-tagline">A real-time, human-in-the-loop annotation system for data-centric AI. Solving the <strong>"cold start" problem</strong> in object detection and segmentation — fast, precise, and production-ready.</p>
         <a href="https://www.youtube.com/watch?v=shU62O8_40E" class="btn btn-primary" target="_blank" rel="noopener"><i class="fas fa-play"></i> Watch Demo</a>
+      </div>
+
+      <!-- SyntTS-Commands -->
+      <div class="card project-card">
+        <div class="project-header">
+          <h3 class="project-title">SyntTS-Commands</h3>
+          <a href="https://huggingface.co/datasets/lugan/Syntts-Commands-Media-Dataset" class="badge badge-blue" target="_blank" rel="noopener"><i class="fab fa-hubspot"></i> Hugging Face</a>
+        </div>
+        <p class="project-tagline">A <strong>large-scale, multilingual synthetic speech command dataset</strong> for low-power Keyword Spotting (KWS) and speech command recognition. Generated via advanced TTS to address data scarcity in <strong>TinyML and Edge AI</strong> — as presented in the paper <em>SynTTS-Commands: A Public Dataset for On-Device KWS via TTS-Synthesized Multilingual Speech</em>.</p>
+        <a href="https://huggingface.co/datasets/lugan/Syntts-Commands-Media-Dataset" class="btn btn-primary" target="_blank" rel="noopener"><i class="fas fa-database"></i> View Dataset</a>
       </div>
 
       <!-- Macro3DGS -->
@@ -653,11 +687,11 @@
     <!-- ====== CTA FOOTER ====== -->
     <footer class="cta-section">
       <h2 class="cta-heading">Open to Collaboration</h2>
-      <p class="cta-sub">Looking for <strong>Visiting Scholar</strong> or <strong>Research Assistant</strong> opportunities in California to scale Macro3DGS and push the boundaries of 3D vision.</p>
+      <p class="cta-sub">We are looking for <strong>Visiting Scholar</strong> or <strong>Research Assistant</strong> opportunities in California to scale Macro3DGS and grow our dataset-driven research pipeline.</p>
       <a href="mailto:lucygan113@gmail.com?subject=CVPR%202026%20Connection" class="btn btn-cta">
         <i class="fas fa-paper-plane"></i> Get in Touch
       </a>
-      <p class="copyright">&copy; 2026 Lu Gan. Built for the future of 3D vision.</p>
+      <p class="copyright">&copy; 2026 Lu Gan &amp; Xi Li. Dataset-driven AI research.</p>
     </footer>
 
   </div>
