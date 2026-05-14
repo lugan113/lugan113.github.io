@@ -147,6 +147,11 @@
       gap: var(--space-4);
     }
 
+    .social-top {
+      padding-top: var(--space-6);
+      padding-bottom: var(--space-6);
+    }
+
     .social-link {
       display: inline-flex;
       align-items: center;
@@ -516,29 +521,28 @@
 
   <div class="container">
 
-    <!-- ====== HEADER ====== -->
-    <header class="header">
-      <div class="avatars-row">
-        <div class="avatar"><img src="background/cropped-lugan_photo%20(1).jpg" alt="Lu Gan"></div>
-        <div class="avatar"><img src="background/cropped-lixi_photo.jpg" alt="Xi Li"></div>
-      </div>
-      <h1 class="name">Lu Gan &amp; Xi Li</h1>
-      <p class="tagline">Dataset-Driven AI Research &amp; Engineering</p>
-      <div class="social-links">
-        <a href="mailto:lucygan113@gmail.com" class="social-link email" aria-label="Email">
-          <i class="fas fa-envelope"></i>
-        </a>
-        <a href="https://github.com/lugan113" class="social-link github" aria-label="GitHub" target="_blank" rel="noopener">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://huggingface.co/datasets/lugan" class="social-link huggingface" aria-label="Hugging Face" target="_blank" rel="noopener">
-          <i class="fas fa-face-smile"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/lu-gan-91786217a/" class="social-link linkedin" aria-label="LinkedIn" target="_blank" rel="noopener">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
-      </div>
-    </header>
+    <!-- ====== ABOUT (Opener) ====== -->
+    <section aria-label="About">
+      <p class="about-text">
+        We are a <strong>dataset-driven AI research &amp; engineering duo</strong>. We build datasets, annotation tools, and scalable data pipelines — the infrastructure that powers downstream AI. From hematological cell data (<strong>Nature Portfolio</strong>) to multilingual on-device speech commands (<strong>Hugging Face</strong>) to a real-time human-in-the-loop annotation system (<strong>AutoLabel Pro · CVPR 2026 Demo</strong>), our work spans modalities — united by an obsession with data quality and annotation fidelity.
+      </p>
+    </section>
+
+    <!-- ====== SOCIAL LINKS ====== -->
+    <div class="social-links" style="margin-top: var(--space-4); margin-bottom: var(--space-2);">
+      <a href="https://github.com/lugan113" class="social-link github" aria-label="GitHub" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://huggingface.co/datasets/lugan" class="social-link huggingface" aria-label="Hugging Face" target="_blank" rel="noopener">
+        <i class="fas fa-face-smile"></i>
+      </a>
+      <a href="mailto:lucygan113@gmail.com" class="social-link email" aria-label="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/lu-gan-91786217a/" class="social-link linkedin" aria-label="LinkedIn" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </div>
 
     <hr class="divider">
 
@@ -563,15 +567,6 @@
           </div>
         </div>
       </div>
-    </section>
-
-    <hr class="divider">
-
-    <!-- ====== ABOUT ====== -->
-    <section aria-label="About">
-      <p class="about-text">
-        We are a <strong>dataset-driven AI research &amp; engineering duo</strong>. We build datasets, annotation tools, and scalable data pipelines — the infrastructure that powers downstream AI. From hematological cell data (<strong>Nature Portfolio</strong>) to multilingual on-device speech commands (<strong>Hugging Face</strong>) to a real-time human-in-the-loop annotation system (<strong>AutoLabel Pro · CVPR 2026 Demo</strong>), our work spans modalities — united by an obsession with data quality and annotation fidelity.
-      </p>
     </section>
 
     <hr class="divider">
@@ -691,6 +686,17 @@
       <a href="mailto:lucygan113@gmail.com?subject=CVPR%202026%20Connection" class="btn btn-cta">
         <i class="fas fa-paper-plane"></i> Get in Touch
       </a>
+      <div class="social-links" style="margin-top: var(--space-6);">
+        <a href="https://github.com/lugan113" class="social-link github" aria-label="GitHub" target="_blank" rel="noopener">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://huggingface.co/datasets/lugan" class="social-link huggingface" aria-label="Hugging Face" target="_blank" rel="noopener">
+          <i class="fas fa-face-smile"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/lu-gan-91786217a/" class="social-link linkedin" aria-label="LinkedIn" target="_blank" rel="noopener">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
       <p class="copyright">&copy; 2026 Lu Gan &amp; Xi Li. Dataset-driven AI research.</p>
     </footer>
 
