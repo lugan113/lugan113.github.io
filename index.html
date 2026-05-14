@@ -283,6 +283,35 @@
       line-height: 1.6;
     }
 
+    .duo-links {
+      margin-top: var(--space-3);
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-3);
+    }
+
+    .duo-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      border: 1px solid var(--border);
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    .duo-link:hover {
+      text-decoration: none;
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .duo-link.email:hover { color: #ea4335; border-color: rgba(234, 67, 53, 0.4); }
+    .duo-link.linkedin:hover { color: #0a66c2; border-color: rgba(10, 102, 194, 0.4); }
+
     /* Project cards */
     .project-card {
       margin-bottom: var(--space-4);
@@ -536,12 +565,6 @@
       <a href="https://huggingface.co/datasets/lugan" class="social-link huggingface" aria-label="Hugging Face" target="_blank" rel="noopener">
         <i class="fas fa-face-smile"></i>
       </a>
-      <a href="mailto:lucygan113@gmail.com" class="social-link email" aria-label="Email">
-        <i class="fas fa-envelope"></i>
-      </a>
-      <a href="https://www.linkedin.com/in/lu-gan-91786217a/" class="social-link linkedin" aria-label="LinkedIn" target="_blank" rel="noopener">
-        <i class="fab fa-linkedin-in"></i>
-      </a>
     </div>
 
     <hr class="divider">
@@ -554,16 +577,24 @@
           <div class="duo-avatar lu"><img src="background/cropped-lugan_photo%20(1).jpg" alt="Lu Gan"></div>
           <div class="duo-info">
             <h3>Lu Gan</h3>
-            <div class="duo-role">Research & Data Strategy</div>
-            <p class="duo-desc">Nature Portfolio first author. Data-centric AI, annotation systems, and 3D vision. From clinical science to cutting-edge research.</p>
+            <div class="duo-role">Independent AI Researcher</div>
+            <p class="duo-desc">Nature Portfolio first author. Self-taught from clinical physiotherapy — now building data-centric AI, annotation systems, and 3D vision pipelines for real-world impact.</p>
+            <div class="duo-links">
+              <a href="mailto:lucygan113@gmail.com" class="duo-link email" aria-label="Email"><i class="fas fa-envelope"></i></a>
+              <a href="https://www.linkedin.com/in/lu-gan-91786217a/" target="_blank" rel="noopener" class="duo-link linkedin" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
           </div>
         </div>
         <div class="card duo-card">
           <div class="duo-avatar xi"><img src="background/cropped-lixi_photo.jpg" alt="Xi Li"></div>
           <div class="duo-info">
             <h3>Xi Li</h3>
-            <div class="duo-role">Senior AI Engineer | Generative AI & Agent Specialist</div>
+            <div class="duo-role">Senior AI Architect</div>
             <p class="duo-desc">Expert in building multi-modal agentic systems (YOLO, Flux, SAM2, Qwen-VL) and industrial-grade solutions for 3D reconstruction and AIGC.</p>
+            <div class="duo-links">
+              <a href="mailto:reilixi723@gmail.com" class="duo-link email" aria-label="Email"><i class="fas fa-envelope"></i></a>
+              <a href="https://www.linkedin.com/in/sam-li-50a96617a/" target="_blank" rel="noopener" class="duo-link linkedin" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
           </div>
         </div>
       </div>
@@ -692,9 +723,6 @@
         </a>
         <a href="https://huggingface.co/datasets/lugan" class="social-link huggingface" aria-label="Hugging Face" target="_blank" rel="noopener">
           <i class="fas fa-face-smile"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/lu-gan-91786217a/" class="social-link linkedin" aria-label="LinkedIn" target="_blank" rel="noopener">
-          <i class="fab fa-linkedin-in"></i>
         </a>
       </div>
       <p class="copyright">&copy; 2026 Lu Gan &amp; Xi Li. Dataset-driven AI research.</p>
